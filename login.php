@@ -22,7 +22,6 @@
                 echo "<li style='color: white; list-style-type: none; background: red; padding: 3%;'>Autenticación fallida!</li>";
             } else if(isset($_GET['error']) && $_GET['error'] == 2) {
                 echo "<li style='color: white; list-style-type: none; background: red; padding: 3%;'>¡Debes iniciar sesión!</li>";
-   
             }
             ?>          
             <input type="submit" value="INICIAR SESIÓN">

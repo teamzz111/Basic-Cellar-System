@@ -1,5 +1,5 @@
 <?php 
     include("conexion.php");
-    include("validar.php");
+    include("sesion.php");
 
 ?>
