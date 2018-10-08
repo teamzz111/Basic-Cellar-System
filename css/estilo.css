@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	color: #666;
+	font-family: 'Roboto Condensed', sans-serif;
+} 	
+/*LOGIN*/
+#Login {
+	width: 70%;
+	max-width: 701px;
+	text-align: center;
+	color: black;
+	margin: 32px auto;
+	display: block;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2%;
+	background: white;
+	border-radius: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+#Login h2{
+	font-family: 'Raleway';
+	font-size: 2.3em;
+	font-weight: 300;
+	margin: .68em;	
+}
+
+
+
+#ccc,
+#password {
+	background: white;
+	color: black;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	border: 1px solid transparent;
+	border-bottom: 2px solid rgba(103, 109, 110, 0.3);
+	padding: 11px;
+	margin-top: 15px;
+	border-radius: 3px;
+	font-size: "Sans";
+	width: 80%;
+}
+
+
+
+
+#Login input[type="submit"] {
+	width: 100%;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 20px;
+	background: rgb(1, 31, 163);
+	margin: 15px 0 0 0;
+	border: 0px solid transparent;
+	color: white;
+	font-size:  1.2em;
+}
+
+#Login input[type="submit"]:hover {
+	background-color: rgb(34, 74, 148);
+	cursor: pointer;
+	transition: 1s linear;
+}
+
+#Login input[type="submit"],
+ {
+	font-size: 1.25em;
+	font-family: Josefin;
+}
+
