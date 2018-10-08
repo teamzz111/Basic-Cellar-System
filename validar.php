@@ -15,6 +15,7 @@
 					$_SESSION['activo'] = true;
 					$_SESSION['usuario'] = $user;
 					if($row['cargo'] == "Admin"){
+						$_SESSION['admin'] = true;
 						header("Location: principalAdmin.php");
 					} else {
 						header("Location: principalBodega.php");

@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: white;
+
+    nav {
+        padding-top: .7em;
+        padding-bottom: .7em;
+        display: flex;
+        align-content: center;
+        align-items: center;
+
+        .izq {
+            width: 50%;
+            display: flex;
+            max-height: 30px;
+            align-items: center;
+
+            img {
+                max-width: 70px;
+            }
+
+            i,
+            input,
+            img {
+                margin: 0.5em;
+            }
+
+            input {
+                opacity: .5;
+                background: rgb(247, 247, 247);
+                border-radius: 1px;
+                border: 1px solid rgba(128, 128, 128, 0.158);
+                padding: 0.6em 12em 0.6em 1em;
+                font-family: "Arial";
+                font-size: 0.8em;
+                color: rgba(167, 167, 167, 0.315);
+
+            }
+
+            i {
+                position: relative;
+                left: -2.6em;
+                font-size: 1em;
+                opacity: .6;
+            }
+        }
+
+        .der {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+
+            button.icon {
+                color: grey;
+                display: flex;
+                padding: 0.5em;
+                background: transparent;
+                border-color: transparent;
+
+                p {
+                    position: relative;
+                    top: 0.25em;
+                    padding: 1%;
+                    padding-left: .4em;
+                }
+
+                i {
+                    position: relative;
+                    left: 0.4em;
+                    top: 1em;
+                    font-size: .8em;
+                }
+            }
+
+            button.iniciarsesion {
+                margin-left: 1em;
+                padding: .8em;
+                background-color: transparent;
+                border-color: transparent;
+                color: grey;
+            }
+
+            button.shop {
+                background-color: transparent;
+                border-color: transparent;
+                padding: 0 0.8em 0 0.8em;
+                color: #FE9387;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+section#main {
+    .img {
+        width: 100%;
+
+        img {
+            width: 100%;
+            max-height: 300px;
+        }
+    }
+
+}
+
+section#destacado{
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .caja{
+        width: 33.33%;
+
+        display: flex;
+        justify-content: center;
+       // min-width: 348px;
+        span{
+            display: flex;
+            flex-direction: column;
+            font-family: "Varela Round";
+            font-weight: 700;
+            font-size: 1em;
+            p{
+                font-weight: 300;
+                font-size: 0.8em;
+            }
+        }
+        img{
+            max-height: 40px;
+            padding-right: .8em;
+        }
+    }
+}
+
+section#ofertas{
+    padding: 1%;
+    hr{
+        width: 99.6%;
+        
+        margin: auto;
+        opacity: .4;
+    }
+    .padre{
+        display: flex;
+        margin-top: 3em;
+        .caja{
+            width: 25%;
+            text-align: center;
+            .img{
+                text-align: center;
+            }
+            p{
+                font-family: "Varela Round";
+                font-size: 0.7em;
+                color: #F44563;
+                text-align: center;
+            }
+            p.precio{
+                font-weight: bold;
+                color: black;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                span{
+                    text-decoration: line-through;
+                    margin-left: 1em;
+                    opacity: .7;
+                    font-size: 0.8em;
+                }
+
+            }
+            .producto{
+                color: black;
+                opacity: .8;
+            }
+        }
+    }
+    .titulos{
+        display: flex;
+        padding-bottom: 0.2em;
+        .izq{
+            margin-right: 1em;
+            img{
+                max-width: 75px;
+            }
+        }
+        .der{
+            h5{
+                font-size: 1.5em;
+                font-family: "Varela Round";
+            }
+            p{
+                font-family: "Varela round";
+            }
+        }
+    }
+}
