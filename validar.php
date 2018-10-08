@@ -1,5 +1,6 @@
 <?php
-	if($_GET["opt"] == 1){
+	session_start();
+	if(isset($_GET["opt"]) && $_GET["opt"] == 1){
 
 		include('conexion.php');
 		if(isset($_GET['opt'])){
@@ -23,26 +24,9 @@
 		}
 	} else {
 		if(!isset($_SESSION['activo']) || !isset($_SESSION['usuario'])){
-			header("Location: login.php");
+			header("Location: login.php?error=2");
 		}
 	}
-      
-if ($resul > 0) {
-		session_start();
-
-
-		if ($usuario == '153412977') {
-			header("Location:eliminar.php");
-
-		}else if ($usuario == '132497123') {
-			header("Location:modificar.php");
-
-		}else if ($usuario == '91273320') {
-			header("Location:mostrar.php");
-		}
-
-}else{
-	header("Location:formulario.php?error=si");
-}
+	
 
 ?>
